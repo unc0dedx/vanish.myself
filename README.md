@@ -13,8 +13,8 @@ Currently, the app doesn't have a core, this repo is just the starting point. Th
 Right now we just need to get the core architecture up and running before we move on to the actual platform integrations.
 
 ### Core Architecture
-- [ ] Decide on the main tech stack (e.g., Electron/React or Tauri/Rust)
-- [ ] Set up secure local storage for API keys (SQLite or encrypted JSON)
+- [x] Tech stack chosen: Sciter for UI
+- [x] Secure local storage chosen: Encrypted JSON for API keys
 - [ ] Build the core job queue to handle bulk tasks and rate limits
 
 ### Platform Integrations
