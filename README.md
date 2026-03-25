@@ -2,7 +2,7 @@
   <img src="Main.png" alt="vanished.myself"/>
 </div>
 
-# vanished.myself
+# vanishing.persona.
 
 A local, privacy-first automation tool to bulk delete posts, tweets, and messages across multiple platforms.
 
