@@ -32,3 +32,10 @@ Right now we just need to get the core architecture up and running before we mov
 - [ ] Local security review (ensure zero data leakage)
 - [ ] Write instructions on how users can generate their own API keys
 - [ ] Build standalone executables (Windows/macOS/Linux)
+
+## What is the purpose of this Tool?
+- This tool is designed to quickly identify and delete messages or media using a program, thus covering your tracks on all social media channels you use. Manually deleting all messages is very time-consuming and therefore both tedious and annoying. It's also worth noting that only local/client-side messages will no longer be visible to other readers. However, many platforms use end-to-end encrypted log systems, but these are stored on dedicated servers, over which we have no control, and therefore these messages will not be deleted.
+
+## FAQ
+# Does this store any private sessions (cookies, tokens, auth, keys...)?
+- No. We promise that this tool will not lead to any indications or manipulated files or strings of hidden softwares that collects and stores your private information. If necessary, you can access the SRC and search for yourself. For problems or questions regarding the project, or for assistance, please contact the repository contributors.
