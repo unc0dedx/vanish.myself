@@ -6,7 +6,7 @@
 
 A local, privacy-first automation tool to bulk delete posts, tweets, and messages across multiple platforms.
 
-Currently, the app doesn't have a core—this repo is just the starting point. The main goal is to build a tool that handles data deletion entirely locally, meaning no cloud storage for API keys and no external tracking.
+Currently, the app doesn't have a core, this repo is just the starting point. The main goal is to build a tool that handles data deletion entirely locally, meaning no cloud storage for API keys and no external tracking.
 
 ## TODOs / Development Checklist
 
