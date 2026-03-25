@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="Main.png" alt="vanished.myself"/>
+  <img src="Vanished.png" alt="vanished.myself"/>
 </div>
 
 # vanishing.persona.
