@@ -1,5 +1,7 @@
 #pragma once
 #include <string>
+#include <map>
+#include <mutex>
 
 namespace vanish {
 namespace storage {
@@ -12,10 +14,13 @@ public:
     std::string load_key(const std::string& platform);
 
 private:
-#ifndef _WIN32
-    // TODO: AES-GCM encryption contexts 
-#endif
     std::string _password;
+    std::string _file_path;
+    std::map<std::string, std::string> _keys;
+    std::mutex _mutex;
+
+    bool _load_from_disk();
+    bool _save_to_disk();
 };
 
 } // namespace storage

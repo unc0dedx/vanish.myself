@@ -1,41 +1,55 @@
 <div align="center">
-  <img src="Vanished.png" alt="vanished.myself"/>
+  <img src="Vanished.png" alt="vanished.myself" width="200" style="border-radius:10px;"/>
+  <br>
+  <h1>vanishing.persona.</h1>
+  <p><strong>A local, privacy-first automation tool to bulk delete posts, tweets, and messages across multiple platforms.</strong></p>
 </div>
 
-# vanishing.persona.
+---
 
-A local, privacy-first automation tool to bulk delete posts, tweets, and messages across multiple platforms.
+## 🎯 Purpose
+`vanishing.persona` is designed to efficiently streamline deleting messages or media, covering your tracks on all social media channels you use. Manually clearing interactions is tedious—this application does the heavy lifting entirely **offline**. 
 
-Currently, the app doesn't have a core, this repo is just the starting point. The main goal is to build a tool that handles data deletion entirely locally, meaning no cloud storage for API keys and no external tracking.
+*Note: Only client-side logs or messages you have direct right to delete will be removed. We cannot scrub server-side end-to-end encrypted backup systems if you do not have deletion access.*
 
-## TODOs / Development Checklist
+## 🔒 Privacy-First
+Data deletion must be handled locally. We enforce **no cloud storage API keys** and **no telemetry/external tracking**:
+- Keys are encrypted locally using Windows BCrypt (AES-GCM).
+- Operates totally autonomously—giving you direct agency over your data footprint.
 
-Right now we just need to get the core architecture up and running before we move on to the actual platform integrations.
+---
 
-### Core Architecture
-- [x] Tech stack chosen: Sciter for UI
-- [x] Secure local storage chosen: Encrypted JSON for API keys
-- [ ] Build the core job queue to handle bulk tasks and rate limits
+## 🏗️ Development Roadmap
 
-### Platform Integrations
-- [ ] Build local-only OAuth flows
-- [ ] Twitter/X API integration (fetch and delete tweets/likes)
-- [ ] Reddit API integration (fetch and delete comments/posts)
-- [ ] Discord integration (delete DMs and server messages)
+> The current state is foundational scaffolding. We are building the core infrastructure before platform integrations.
 
-### UI / Front-end
-- [ ] Basic dashboard for connecting platform accounts
-- [ ] Post filtering view (by date, keywords, engagement)
-- [ ] Progress tracker for active deletion queues
+### 1. Core Architecture
+- [x] UI Engine: **Sciter** for lean, fast interface rendering.
+- [x] Secure Local Storage: Encrypted JSON for API credentials.
+- [x] Thread-safe Rate-Limited Job Queue: Executes safe, automated data deletion tasks cleanly. 
 
-### Security & Release
-- [ ] Local security review (ensure zero data leakage)
-- [ ] Write instructions on how users can generate their own API keys
-- [ ] Build standalone executables (Windows/macOS/Linux)
+### 2. Platform Integrations *(Coming Soon)*
+- [ ] Implement local-only OAuth flows
+- [ ] Twitter / X API (delete posts, un-like tweets)
+- [ ] Reddit API (delete comments and threads)
+- [ ] Discord Integration (wipe server messages and DMs)
 
-## What is the purpose of this Tool?
-- This tool is designed to quickly identify and delete messages or media using a program, thus covering your tracks on all social media channels you use. Manually deleting all messages is very time-consuming and therefore both tedious and annoying. It's also worth noting that only local/client-side messages will no longer be visible to other readers. However, many platforms use end-to-end encrypted log systems, but these are stored on dedicated servers, over which we have no control, and therefore these messages will not be deleted.
+### 3. UI / User Experience
+- [ ] Interactive Dashboard for Account Configurations
+- [ ] Post/Message Filters (date range, keyword scanning, engagement thresholds)
+- [ ] Real-time Progress Tracking for running deletion queues
 
-## FAQ
-# Does this store any private sessions (cookies, tokens, auth, keys...)?
-- No. We promise that this tool will not lead to any indications or manipulated files or strings of hidden softwares that collects and stores your private information. If necessary, you can access the SRC and search for yourself. For problems or questions regarding the project, or for assistance, please contact the repository contributors.
+### 4. Security & Release
+- [ ] Local Security Vulnerability Testing (guarantee zero trace footprint)
+- [ ] User self-serve API Key Generation Guides
+- [ ] Standalone OS Executables (Windows, macOS, Linux)
+
+---
+
+## ❓ FAQ
+
+### Does this store any private sessions (cookies, tokens, auth, keys)?
+**Absolutely not.** We guarantee that this tool contains zero manipulation or shadow software collecting your info. Check the source code yourself. Keys are natively encrypted with zero-trust storage methodologies. 
+
+### Where can I get support?
+For problems, bug reports, or assistance, please open a GitHub issue or contact the project maintainers directly via repository discussions.

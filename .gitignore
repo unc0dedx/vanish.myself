@@ -1,0 +1,40 @@
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+compile_commands.json
+build/
+out/
+bin/
+
+# Visual Studio generated files
+.vs/
+*.sln
+*.suo
+*.vcxproj
+*.vcxproj.user
+*.vcxproj.filters
+
+# Build artifacts
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.lib
+*.dll
+
+# Dependencies
+deps/
+
+# Auto-generated source code
+src/resources.cpp
+
+# Application specific local data
+keys.dat
+*.dat
+*.json.enc
+
+# OS generated files
+.DS_Store
+Thumbs.db
