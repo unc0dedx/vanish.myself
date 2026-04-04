@@ -20,6 +20,7 @@ add_executable(vanishing_persona
     src/main.cpp 
     src/job_queue.cpp 
     src/storage.cpp
+    src/resources.cpp
 )
 
 add_dependencies(vanishing_persona PackUI)
